@@ -28,13 +28,13 @@ header i {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1%;
+  padding: 0.5% 1%;
 }
 
 .header__section ul {
   display: flex;
   list-style: none;
-  gap: 10px;
+  gap: 15px;
   padding: 1%;
 }
 
