@@ -21,7 +21,6 @@ header {
 
 header i {
   cursor: pointer;
-  padding-left: 10%;
 }
 
 /* header__section */
@@ -29,6 +28,7 @@ header i {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 1%;
 }
 
 .header__section ul {
@@ -51,26 +51,48 @@ header i {
 }
 
 /* sidenav */
-.sidenav{
-    display: none;
-    height: 100vh;
+.sidenav {
     position: fixed;
     top: 0;
-    z-index: 50;
+    left: 0;
+    width: 60%;
+    height: 100vh;
     background-color: rgb(0, 0, 0);
     color: white;
-    width: 30%;
-    transition: 0.9s linear;
+    padding: 5%;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease;
+    z-index: 50;
 }
+
+.sidenav.active {
+    transform: translateX(0);
+}
+
+/* close icon inside sidenav */
+.sidenav #close {
+    position: absolute;       /* position relative to sidenav */
+    top: 20px;                /* distance from top */
+    right: 20px;              /* distance from right */
+    font-size: 1.5rem;        /* make it bigger if you want */
+    cursor: pointer;
+    color: white;
+}
+
 .sidenav ul{
     list-style: none;
-    padding: 1%;
+    padding: 20%;
     display: flex;
-    gap: 20px;
+    gap: 50px;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
+.sidenav ul li:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 /* media Queries */
 @media (min-width: 700px) {
   .header__section i {
