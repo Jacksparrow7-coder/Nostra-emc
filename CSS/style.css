@@ -36,14 +36,17 @@ header i {
   list-style: none;
   gap: 15px;
   padding: 1%;
+  color: black;
 }
 
-.header__section ul li {
-  cursor: pointer;
+.header__section ul li a{
+  color: black;
+  text-decoration: none;
 }
 
 .header__section ul li:hover {
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .header__section i {
@@ -88,9 +91,27 @@ header i {
     justify-content: center;
     flex-direction: column;
 }
+.sidenav ul li a{   
+    text-decoration: none;
+    color: white;
+}
+
 .sidenav ul li:hover{
     cursor: pointer;
     text-decoration: underline;
+}
+
+.signupbtn{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 100;
 }
 
 /* media Queries */
