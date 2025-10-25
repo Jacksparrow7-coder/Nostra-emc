@@ -3,6 +3,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-size: 16px;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
 }
@@ -191,21 +192,20 @@ header i {
   color: white;
   z-index: 20;
   cursor: pointer;
-  padding: 10px 15px;
   border-radius: 50%;
   transition: background 0.3s ease;
 }
 
 .slide__btn:hover {
-  color: black;
+  color: rgb(255, 238, 0);
 }
 
 .slide__btn.left {
-  left: 20px;
+  left: 3%;
 }
 
 .slide__btn.right {
-  right: 20px;
+  right: 3%;
 }
 
 
@@ -223,7 +223,22 @@ header i {
   .header__section ul {
     display: none;
   }
-   .image__text h2 {
+   .slide__btn {
+    font-size: 0.3rem; /* visible but not too big */
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 30; /* keep above everything */
+  }
+
+  .slide__btn.left {
+    left: 1%;
+  }
+
+  .slide__btn.right {
+    right: 1%;
+  }
+
+  .image__text h2 {
     font-size: 0.5rem;
   }
 
@@ -232,9 +247,7 @@ header i {
   }
 
   .image__text button {
-    font-size: 0.3em;
+    font-size: 0.5rem;
+    padding: 2%;
   }
-   .slide__btn {
-    font-size: 0.3rem;
-   }
 }
