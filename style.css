@@ -7,6 +7,11 @@
   font-family: "Montserrat", sans-serif;
 }
 
+h1{
+  font-size: 2rem;
+  font-weight: 800;
+}
+
 /* header */
 header {
   width: 100%;
@@ -118,25 +123,36 @@ header i {
     z-index: 100;
 }
 
+/* image slide */
 .image__container {
   position: relative;
   width: 90%;
   margin: 2% 5%;
-}
-
-.image__container img {
-  width: 100%;
-  height: auto;
-  display: block;
+  overflow: hidden;
   border-radius: 10px;
 }
 
+/* Slide Wrapper */
+.slide__wrapper {
+  display: flex;
+  transition: transform 0.6s ease-in-out;
+  width: 100%;
+}
+
+.slide__wrapper img {
+  width: 100%;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+
+/* Text Overlay */
 .image__text {
   position: absolute;
-  top: 20%;
-  left: 5%;
-  z-index: 10; /* makes text appear on top of image */
+  top: 25%;
+  left: 8%;
+  z-index: 10;
   color: white;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
 }
 
 .image__text h2 {
@@ -151,15 +167,46 @@ header i {
 }
 
 .image__text button {
-  padding: 1% 2%;
+  padding: 12px 24px;
   border: none;
   background-color: white;
   color: black;
   font-weight: bold;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
 }
 
+.image__text button:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Navigation Arrows */
+.slide__btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  color: white;
+  z-index: 20;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 50%;
+  transition: background 0.3s ease;
+}
+
+.slide__btn:hover {
+  color: black;
+}
+
+.slide__btn.left {
+  left: 20px;
+}
+
+.slide__btn.right {
+  right: 20px;
+}
 
 
 
@@ -187,4 +234,7 @@ header i {
   .image__text button {
     font-size: 0.3em;
   }
+   .slide__btn {
+    font-size: 0.3rem;
+   }
 }
