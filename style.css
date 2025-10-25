@@ -121,7 +121,7 @@ header i {
 .image__container {
   position: relative;
   width: 90%;
-  margin: 1% 5%;
+  margin: 2% 5%;
 }
 
 .image__container img {
@@ -177,14 +177,14 @@ header i {
     display: none;
   }
    .image__text h2 {
-    font-size: 1rem;
+    font-size: 0.5rem;
   }
 
   .image__text p {
-    font-size: 0.5rem;
+    font-size: 0.3rem;
   }
 
   .image__text button {
-    font-size: 0.5rem;
+    font-size: 0.3em;
   }
 }
