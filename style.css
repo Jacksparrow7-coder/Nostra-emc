@@ -6,6 +6,7 @@
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
 }
+
 /* header */
 header {
   width: 100%;
@@ -29,6 +30,9 @@ header i {
   justify-content: space-between;
   align-items: center;
   padding: 0.5% 1%;
+  background-color: white;
+  position: sticky;
+  top: 0;
 }
 
 .header__section ul {
@@ -114,14 +118,73 @@ header i {
     z-index: 100;
 }
 
+.image__container {
+  position: relative;
+  width: 90%;
+  margin: 1% 5%;
+}
+
+.image__container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+.image__text {
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  z-index: 10; /* makes text appear on top of image */
+  color: white;
+}
+
+.image__text h2 {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 1%;
+}
+
+.image__text p {
+  font-size: 1.5rem;
+  margin-bottom: 1%;
+}
+
+.image__text button {
+  padding: 1% 2%;
+  border: none;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+
+
+
 /* media Queries */
+/* desktop */
 @media (min-width: 700px) {
   .header__section i {
     display: none;
   }
 }
+
+/* mobile */
 @media (max-width: 699px) {
   .header__section ul {
     display: none;
+  }
+   .image__text h2 {
+    font-size: 1rem;
+  }
+
+  .image__text p {
+    font-size: 0.5rem;
+  }
+
+  .image__text button {
+    font-size: 0.5rem;
   }
 }
