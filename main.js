@@ -77,24 +77,6 @@ likebutton.forEach((btn)=>{
     })
 })
 
-window.addEventListener("scroll",function(){
-    var elements = this.document.querySelectorAll(".initial-scroll-animate")
-    elements.forEach((el)=>{
-        windowHeight = window.innerHeight
-     var elbound = el.getBoundingClientRect()
-   
-
-     console.log(windowHeight)
-     console.log(elbound.top)
-     if(windowHeight>elbound.top-100){
-        console.log("Hi")
-    el.classList.remove("reveal-scroll-animate")
-
-    }
-    
-})
-})
-
 // Scroll Animation
 window.addEventListener('scroll', revealSections);
 
