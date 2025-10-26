@@ -255,54 +255,61 @@ h2 {
 }
 
 /* arrivals */
-.new-arrival {
+.arrivals__images {
   display: flex;
-  justify-content: space-between;
-  margin-top: 2vw;
-  padding: 2%;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap; /* allows auto adjustment on small screens */
+  gap: 2rem; /* adds spacing between images */
+  padding: 0 1%;
+  border-radius: 5%;
 }
 
-.new-arrival-container {
+.arrivals__images-conatiner {
   position: relative;
+  flex: 1 1 200px; /* responsive width - flexible and shrinkable */
+  max-width: 250px; /* prevents stretching too wide on desktop */
+  display: flex;
+  justify-content: center;
 }
 
-.new-arrival-container img {
-  border-radius: 2%;
+.arrivals__images-conatiner img {
+  width: 100%; /* makes image responsive */
+  height: auto;
+  border-radius: 5%;
 }
 
 .overlay {
-  padding: 2%;
-  border-radius: 2%;
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: black;
   z-index: 2;
   top: 0;
   opacity: 0.6;
+  background-color: black;
+  border-radius: 5%;
 }
 
-.new-arrival button {
-  padding: 2% 10%;
-  margin-top: 10px;
-  font-size: 1.2vw;
-  color: #000000;
+.arrivals__images button {
+  font-weight: bold;
+  padding: 2%;
   background-color: white;
-  border-radius: 10px;
+  color: black;
+  border-radius: 5%;
   position: absolute;
-  border: none;
-  top: 50%;
-  left: 25%;
-  z-index: 2;
-  transition: 0.3s ease;
-  cursor: pointer;
-  font-weight: 500;
+  bottom: 45%;
+  left: 50%;
+  transform: translateX(-50%); /* centers the button */
+  transition: all 0.3s ease;
+  z-index: 5;
 }
 
-.new-arrival button:hover {
+.arrivals__images button:hover {
   color: white;
   background-color: black;
+  cursor: pointer;
 }
+
 /* media Queries */
 /* desktop */
 @media (min-width: 700px) {
@@ -362,7 +369,16 @@ h2 {
     padding: 2%;
     font-size: 0.7rem;
   }
+  .service__container2{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .service__container2 div{
+    width: 60%;
+  }
+
   .arrivals__images button {
-    font-size: 0.4rem;
+    font-size: 0.6rem;
   }
 }
