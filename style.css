@@ -8,6 +8,23 @@
   font-family: "Montserrat", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+/* animation */
+/* Scroll Reveal Animations */
+.reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease-out;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 h1 {
   font-size: 2rem;
   font-weight: 800;
@@ -380,12 +397,14 @@ header i {
 }
 
 .news__search {
-  padding: 2%;
-  width: 80%;
+  padding: 1%;
+  width: 70%;
   margin-bottom: 10px;
   border: solid #000000 3px;
 }
-
+.news__search input{
+  width: 100%;
+}
 .news__container input:focus {
   outline: none;
 }
@@ -531,8 +550,8 @@ header i {
   .sale-overlay {
     font-size: 0.6rem;
   }
-  .news__container p {
-    font-size: 0.4rem;
+  .news__container p,.news__container h2 {
+    font-size: 0.7rem;
   }
   .news__container button {
     font-size: 0.6rem;

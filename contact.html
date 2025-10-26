@@ -1,46 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./contact.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer">
-</head>
-<body>
+    <link rel="stylesheet" href="./contact.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
     <header>
-        <p>Sing Up</p>
-        <span>and</span>
-        <p  style="font-weight: bolder;">GET 20% OFF</p>
-        <span>for  your  first  Order <i id="x" class="fa-regular fa-circle-xmark" style="color: #ffffff;"></i></span>
+      <p>Sing Up</p>
+      <span>and</span>
+      <p style="font-weight: bolder">GET 20% OFF</p>
+      <span
+        >for your first Order
+        <i id="x" class="fa-regular fa-circle-xmark" style="color: #ffffff"></i
+      ></span>
     </header>
     <main>
-        <section class="header__section">
-            <h1>Nostra</h1>
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="#newarrival"></a>New Arrival</li>
-                <li>Most Wanted</li>
-                <li><a href="./collections.html">Collections</a></li>
-                <li><a href="./contact.html">Contact Us</a></li>
-            </ul>
-            <i id="icon" class="fa-solid fa-bars fa-lg" style="color: #000000;"></i>
-        </section>
-<!-- sidenav -->
-        <div class="sidenav">
-            <i id="close" class="fa-solid fa-xmark" style="color: #ffffff;"></i>
-             <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="#newarrival"></a>New Arrival</li>
-                <li>Most Wanted</li>
-                <li><a href="./collections.html">Collections</a></li>
-                <li><a href="./contact.html">Contact Us</a></li>
-            </ul>
+      <section class="header__section">
+        <h1>Nostra</h1>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./index.html">New Arrival</a></li>
+          <li><a href="./index.html">Most Wanted</a></li>
+          <li><a href="./collections.html">Collections</a></li>
+          <li><a href="./contact.html">Contact Us</a></li>
+        </ul>
+        <i id="icon" class="fa-solid fa-bars fa-lg" style="color: #000000"></i>
+      </section>
+      <!-- sidenav -->
+      <div class="sidenav">
+        <i id="close" class="fa-solid fa-xmark" style="color: #ffffff"></i>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./index.html">New Arrival</a></li>
+          <li><a href="./index.html">Most Wanted</a></li>
+          <li><a href="./collections.html">Collections</a></li>
+          <li><a href="./contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="container">
+        <div class="contact-form">
+          <h2>Contact Us</h2>
+          <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required />
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <input type="submit" value="Submit" />
+          </form>
         </div>
+      </div>
+      <!-- news -->
+      <div class="news__container">
+        <h2>Join our News Letter</h2>
+        <p>
+          Signup for our email newspaper to get exclusive discounts, updates,
+          and more
+        </p>
+        <div class="news__search">
+          <input class="search" />
+        </div>
+        <div>
+          <button>Subscribe</button>
+        </div>
+      </div>
     </main>
+
     <footer>
+      <div class="footer">
+        <div class="footer-container">
+          <div class="footer-box-1">
+            <h2 class="headingText">Nostra</h2>
+            <p>
+              Discover the latest fashion trends and premium quality clothing at
+              Nostra. Your destination for authentic branded wear and stylish
+              collections.
+            </p>
+            <div class="footer-icon-container">
+              <a href="https://www.instagram.com/"
+                ><i
+                  class="icon fa-brands fa-instagram fa-2x"
+                  style="color: #ffffff"
+                ></i
+              ></a>
+
+              <a href="https://x.com/"
+                ><i
+                  class="fa-brands fa-x-twitter fa-2x"
+                  style="color: #ffffff"
+                ></i>
+              </a>
+              <a href="https://www.facebook.com/">
+                <i
+                  class="icon fa-brands fa-facebook fa-2x"
+                  style="color: #ffffff"
+                ></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <p class="subtitle">&copy; 2025 Nostra.com</p>
         <button class="signupbtn">SignUp</button>
+      </div>
     </footer>
-<script src="./contact.js"></script>
-</body>
+    <script src="./contact.js"></script>
+  </body>
 </html>

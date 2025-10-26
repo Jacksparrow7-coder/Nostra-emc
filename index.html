@@ -45,7 +45,7 @@
         <ul>
           <li><a href="./index.html">Home</a></li>
           <li><a href="#newarrival">New Arrival</a></li>
-          <li>Most Wanted</li>
+          <li><a href="#most-wanted">Most Wanted</a></li>
           <li><a href="./collections.html">Collections</a></li>
           <li><a href="./contact.html">Contact Us</a></li>
         </ul>
@@ -152,8 +152,8 @@
       </div>
 
       <!-- New arrivals -->
-      <div class="arrivals__container">
-        <h2>New Arrivals</h2>
+      <div class="arrivals__container reveal">
+        <h2 id="newarrival">New Arrivals</h2>
         <div class="arrivals__images">
           <div class="arrivals__images-conatiner">
             <img style="width: 40vh" src="images/gap.png" alt="" />
@@ -182,7 +182,7 @@
       </div>
 
       <!-- most-wanted -->
-      <div class="initial-scroll-animate reveal-scroll-animate">
+      <div class="initial-scroll-animate reveal" id="most-wanted"">
         <h2 id="most-wanted" style="margin-top: 5vw">Most Wanted</h2>
         <div class="most-wanted">
           <div class="most-wanted-container">
@@ -273,15 +273,14 @@
               collections.
             </p>
             <div class="footer-icon-container">
-              <a href="https://www.instagram.com/"
-                ><i
+              <a href="https://www.instagram.com/">
+                <i
                   class="icon fa-brands fa-instagram fa-2x"
                   style="color: #ffffff"
-                ></i
-              ></a>
-
-              <a href="https://x.com/"
-                ><i
+                ></i>
+              </a>
+              <a href="https://x.com/">
+                <i
                   class="fa-brands fa-x-twitter fa-2x"
                   style="color: #ffffff"
                 ></i>
@@ -290,8 +289,8 @@
                 <i
                   class="icon fa-brands fa-facebook fa-2x"
                   style="color: #ffffff"
-                ></i
-              ></a>
+                ></i>
+              </a>
             </div>
           </div>
         </div>
@@ -299,6 +298,7 @@
         <button class="signupbtn">SignUp</button>
       </div>
     </footer>
+
     <script src="./main.js"></script>
   </body>
 </html>
