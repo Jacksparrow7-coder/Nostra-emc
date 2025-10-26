@@ -60,3 +60,21 @@ setInterval(() => {
   index = (index + 1) % slides.length;
   showSlide();
 }, 5000);
+
+var likebuttons=document.querySelectorAll(".like-button")
+
+likebuttons.forEach((btn)=>{
+    btn.addEventListener("click",function(e){
+        
+        
+        if(e.target.src.indexOf("blackheart")>0)
+        {
+            console.log("jkjk");
+            e.target.src="img/icons/redheart.png"
+        }
+        else{
+            e.target.src="img/icons/blackheart.png"
+        }
+    })
+})
+

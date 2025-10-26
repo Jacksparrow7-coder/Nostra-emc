@@ -13,8 +13,8 @@ h1 {
   font-weight: 800;
 }
 
-h4{
-  font-size:1rem;
+h4 {
+  font-size: 1rem;
   font-weight: 600;
 }
 
@@ -215,24 +215,24 @@ header i {
 }
 
 /* brands */
-h2{
+h2 {
   font-size: 1.5rem;
   font-weight: 900;
   padding: 1%;
 }
-.brands__logos img{
+.brands__logos img {
   width: 10%;
   height: 10%;
 }
 
-.brands__logos{
+.brands__logos {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
 /* animation */
-.service__container1{
+.service__container1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -240,46 +240,69 @@ h2{
   margin: 2% auto;
 }
 
-.service__container2{
+.service__container2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1%;
 }
 
-.service__container2 div{
-  width: 22%;
-  height:250px;
+.service__container2 div {
+  width: 24%;
   padding: 1%;
-  border-radius:10px;
-  background-color: #F2F4F7;
-
+  border-radius: 10px;
+  background-color: #f2f4f7;
 }
 
+/* arrivals */
+.new-arrival {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2vw;
+  padding: 2%;
+}
 
+.new-arrival-container {
+  position: relative;
+}
 
+.new-arrival-container img {
+  border-radius: 2%;
+}
 
+.overlay {
+  padding: 2%;
+  border-radius: 2%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 2;
+  top: 0;
+  opacity: 0.6;
+}
 
+.new-arrival button {
+  padding: 2% 10%;
+  margin-top: 10px;
+  font-size: 1.2vw;
+  color: #000000;
+  background-color: white;
+  border-radius: 10px;
+  position: absolute;
+  border: none;
+  top: 50%;
+  left: 25%;
+  z-index: 2;
+  transition: 0.3s ease;
+  cursor: pointer;
+  font-weight: 500;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.new-arrival button:hover {
+  color: white;
+  background-color: black;
+}
 /* media Queries */
 /* desktop */
 @media (min-width: 700px) {
@@ -288,26 +311,28 @@ h2{
   }
 }
 
-
 /* mobile */
 @media (max-width: 699px) {
   h1 {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
-  h2{
+  h2 {
+    font-size: 0.8rem;
+  }
+  h4 {
     font-size: 0.6rem;
   }
-  h4{
-    font-size: 0.4rem;
+  p {
+    font-size: 0.6rem;
   }
-  p{
-    font-size: 0.4rem;
+  header p {
+    font-size: 1rem;
   }
   .header__section ul {
     display: none;
   }
   .slide__btn {
-    font-size:0.7rem; /* visible but not too big */
+    font-size: 0.7rem; /* visible but not too big */
     top: 50%;
     transform: translateY(-50%);
     z-index: 30; /* keep above everything */
@@ -333,15 +358,11 @@ h2{
     font-size: 0.3rem;
     padding: 2%;
   }
-
-  .service__container2{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 10px;
+  .signupbtn {
+    padding: 2%;
+    font-size: 0.7rem;
   }
-  .service__container2 div{
-    width: 70%;
-    height: auto;
+  .arrivals__images button {
+    font-size: 0.4rem;
   }
 }
