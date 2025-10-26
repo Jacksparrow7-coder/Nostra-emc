@@ -13,6 +13,11 @@ h1 {
   font-weight: 800;
 }
 
+h4{
+  font-size:1rem;
+  font-weight: 600;
+}
+
 /* header */
 header {
   width: 100%;
@@ -39,6 +44,7 @@ header i {
   background-color: white;
   position: sticky;
   top: 0;
+  z-index: 100;
 }
 
 .header__section ul {
@@ -208,6 +214,72 @@ header i {
   right: 3%;
 }
 
+/* brands */
+h2{
+  font-size: 1.5rem;
+  font-weight: 900;
+  padding: 1%;
+}
+.brands__logos img{
+  width: 10%;
+  height: 10%;
+}
+
+.brands__logos{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* animation */
+.service__container1{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1%;
+  margin: 2% auto;
+}
+
+.service__container2{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1%;
+}
+
+.service__container2 div{
+  width: 22%;
+  height:250px;
+  padding: 1%;
+  border-radius:10px;
+  background-color: #F2F4F7;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* media Queries */
 /* desktop */
 @media (min-width: 700px) {
@@ -216,10 +288,20 @@ header i {
   }
 }
 
+
 /* mobile */
 @media (max-width: 699px) {
   h1 {
     font-size: 1rem;
+  }
+  h2{
+    font-size: 0.6rem;
+  }
+  h4{
+    font-size: 0.4rem;
+  }
+  p{
+    font-size: 0.4rem;
   }
   .header__section ul {
     display: none;
@@ -250,5 +332,16 @@ header i {
   .image__text button {
     font-size: 0.3rem;
     padding: 2%;
+  }
+
+  .service__container2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+  }
+  .service__container2 div{
+    width: 70%;
+    height: auto;
   }
 }
