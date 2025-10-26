@@ -15,7 +15,7 @@ h1 {
 
 h4 {
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 /* header */
@@ -249,12 +249,11 @@ h2 {
 
 .service__container2 div {
   width: 24%;
-  height: 260px;
+  height: 265px;
   padding: 1%;
   border-radius: 10px;
   background-color: #f2f4f7;
 }
-
 /* arrivals */
 .arrivals__images {
   display: flex;
@@ -310,7 +309,64 @@ h2 {
   background-color: black;
   cursor: pointer;
 }
+/* most wanted */
+.new-arrival button {
+  padding: 5% 10%; /* shorthand for top/bottom and left/right */
+  margin-top: 10px;
+  font-size: 1.2vw;
+  color: #1D232C;
+  border-radius: 10px;
+  position: absolute;
+  border: none;
+  top: 50%;
+  left: 18%;
+  z-index: 2;
+}
 
+/* Horizontal scroll with hidden scrollbar */
+.most-wanted {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 20px;
+  margin-top: 2vw;
+  padding: 2vw;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+
+.most-wanted::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+.most-wanted-container {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  position: relative;
+}
+
+.most-wanted img {
+  border-radius: 2%;
+}
+
+.sale-overlay {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  font-size: 2vw;
+  background-color: red;
+  color: white;
+  padding: 0 10px;
+  border-radius: 10%;
+}
+
+.like-button {
+  position: absolute;
+  width: 30px; /* fixed size for better control */
+  bottom: 12%;
+  right: 5%;
+}
 /* media Queries */
 /* desktop */
 @media (min-width: 700px) {
@@ -370,12 +426,12 @@ h2 {
     padding: 2%;
     font-size: 0.7rem;
   }
-  .service__container2{
+  .service__container2 {
     display: flex;
     flex-direction: column;
     gap: 5px;
   }
-  .service__container2 div{
+  .service__container2 div {
     width: 60%;
     height: fit-content;
   }

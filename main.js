@@ -61,20 +61,36 @@ setInterval(() => {
   showSlide();
 }, 5000);
 
-var likebuttons=document.querySelectorAll(".like-button")
+var likebutton=document.querySelectorAll(".like-button")
 
-likebuttons.forEach((btn)=>{
+likebutton.forEach((btn)=>{
     btn.addEventListener("click",function(e){
         
         
         if(e.target.src.indexOf("blackheart")>0)
         {
-            console.log("jkjk");
-            e.target.src="img/icons/redheart.png"
+            e.target.src="images/redheart.png"
         }
         else{
-            e.target.src="img/icons/blackheart.png"
+            e.target.src="images/blackheart.png"
         }
     })
 })
 
+window.addEventListener("scroll",function(){
+    var elements = this.document.querySelectorAll(".initial-scroll-animate")
+    elements.forEach((el)=>{
+        windowHeight = window.innerHeight
+     var elbound = el.getBoundingClientRect()
+   
+
+     console.log(windowHeight)
+     console.log(elbound.top)
+     if(windowHeight>elbound.top-100){
+        console.log("Hi")
+    el.classList.remove("reveal-scroll-animate")
+
+    }
+    
+})
+})
