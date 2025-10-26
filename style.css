@@ -362,7 +362,7 @@ h2 {
 
 .like-button {
   position: absolute;
-  width: 30px; /* fixed size for better control */
+  width: 10%; /* fixed size for better control */
   bottom: 5%;
   right: 5%;
 }
