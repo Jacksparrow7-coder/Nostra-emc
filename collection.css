@@ -226,6 +226,9 @@ header i {
   }
 }
 @media (max-width: 699px) {
+  .header__section h1{
+    font-size: 1.2rem;
+  }
   h1{
     font-size: 0.4rem;
   }
